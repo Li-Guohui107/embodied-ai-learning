@@ -76,7 +76,7 @@ r_{31}&r_{32}&r_{33}&t_z\\
 \end{bmatrix}
 $$
 
-其中 $R\in SO(3)$ 是旋转矩阵，$$\mathbf{t}\in\mathbb{R}^3$$ 是平移向量。
+其中 $R\in SO(3)$ 是旋转矩阵，$\mathbf{t}\in\mathbb{R}^3$是平移向量。
 
 ## 3.4 变换组合
 
@@ -123,15 +123,13 @@ $$
 
 $$
 \begin{bmatrix}x'\\y'\\1\end{bmatrix}
-=
-\begin{bmatrix}
+=\begin{bmatrix}
 0&-1&2\\
 1&0&3\\
 0&0&1
 \end{bmatrix}
 \begin{bmatrix}1\\0\\1\end{bmatrix}
-=
-\begin{bmatrix}2\\4\\1\end{bmatrix}
+=\begin{bmatrix}2\\4\\1\end{bmatrix}
 $$
 
 ## 3.7 练习
