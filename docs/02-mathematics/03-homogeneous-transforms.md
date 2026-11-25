@@ -76,7 +76,7 @@ r_{31}&r_{32}&r_{33}&t_z\\
 \end{bmatrix}
 $$
 
-其中 $R\in SO(3)$ 是旋转矩阵，$\mathbf{t}\in\mathbb{R}^3$ 是平移向量。
+其中 $R\in SO(3)$ 是旋转矩阵，$$\mathbf{t}\in\mathbb{R}^3$$ 是平移向量。
 
 ## 3.4 变换组合
 
