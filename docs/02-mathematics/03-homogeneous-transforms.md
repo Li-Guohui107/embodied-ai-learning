@@ -67,8 +67,7 @@ T=
 \begin{bmatrix}
 R&\mathbf{t}\\
 \mathbf{0}^T&1
-\end{bmatrix}
-=
+\end{bmatrix}=
 \begin{bmatrix}
 r_{11}&r_{12}&r_{13}&t_x\\
 r_{21}&r_{22}&r_{23}&t_y\\
