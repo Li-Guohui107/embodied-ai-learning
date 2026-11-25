@@ -1,0 +1,9 @@
+/* Formula layout: allow long equations to scroll instead of clipping. */
+.arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2rem 0;
+}
+.md-typeset mjx-container {
+  font-size: 1.02em;
+}

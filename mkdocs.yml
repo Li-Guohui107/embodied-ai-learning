@@ -1,0 +1,104 @@
+site_name: 具身智能系统学习教程
+site_description: 从数学基础、机器人学到具身智能算法与实践
+site_author: Embodied AI Learning Tutorial
+repo_name: embodied-ai-learning-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首页: index.md
+  - 学习路线: roadmap.md
+  - 开始学习: getting-started.md
+  - 数学公式规范: math-rendering.md
+  - 具身智能基础:
+      - 什么是具身智能: 01-foundations/01-embodied-ai.md
+      - 智能体交互闭环: 01-foundations/02-agent-loop.md
+      - 系统架构与任务分层: 01-foundations/03-system-architecture.md
+  - 数学与空间变换:
+      - 向量与矩阵: 02-mathematics/01-vectors-matrices.md
+      - 坐标系与参考系: 02-mathematics/02-coordinate-frames.md
+      - 齐次变换矩阵: 02-mathematics/03-homogeneous-transforms.md
+      - 三维姿态表示: 02-mathematics/04-rotation-representations.md
+  - 机器人学与控制:
+      - 机器人结构与关节: 03-robotics/01-robot-model.md
+      - 正运动学: 03-robotics/02-forward-kinematics.md
+      - 逆运动学: 03-robotics/03-inverse-kinematics.md
+      - 雅可比矩阵: 03-robotics/04-jacobian.md
+      - 轨迹规划: 03-robotics/05-trajectory-planning.md
+      - 控制基础: 03-robotics/06-control-basics.md
+  - 机器人感知:
+      - 相机模型与标定: 04-perception/01-camera-model.md
+      - RGB-D 与深度感知: 04-perception/02-rgbd-depth.md
+      - 点云处理: 04-perception/03-point-cloud.md
+      - 目标检测与视觉任务: 04-perception/04-object-detection.md
+  - ROS 2:
+      - ROS 2 核心概念: 05-ros2/01-ros2-concepts.md
+      - Python 发布与订阅: 05-ros2/02-python-publisher-subscriber.md
+  - 仿真与 Sim-to-Real:
+      - 仿真平台选型: 06-simulation/01-simulation-platforms.md
+      - Sim-to-Real: 06-simulation/02-sim-to-real.md
+  - 机器人学习与前沿模型:
+      - 机器学习基础: 07-learning/01-ml-foundations.md
+      - 强化学习: 07-learning/02-reinforcement-learning.md
+      - 模仿学习: 07-learning/03-imitation-learning.md
+      - VLA 模型: 07-learning/04-vla.md
+      - 世界模型: 07-learning/05-world-models.md
+  - 综合实践项目:
+      - 项目总览: 08-projects/index.md
+      - 二自由度机械臂: 08-projects/01-planar-2dof-arm.md
+      - 视觉颜色检测: 08-projects/02-vision-color-detection.md
+      - ROS 2 通信: 08-projects/03-ros2-communication.md
+  - 安全须知: safety.md
+  - 术语表: glossary.md
+  - 资源库:
+      - 官方资源: resources/official-resources.md
+      - 论文阅读指南: resources/paper-reading.md
